@@ -1,12 +1,11 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class ArrayMergeShould {
-
+public class ArrayMergerWithOneLoopShould {
     @Test
     public void merge() {
         //Given
-        ArrayMerge arrayMerge = new ArrayMerge();
+        ArrayMergeWithOneLoop arrayMerge = new ArrayMergeWithOneLoop();
         //When
         int firstArray[] = {1, 2, 5, 6, 3, 4};
         int secondArray[] = {6, 55, 22, 7, 22};
@@ -19,7 +18,7 @@ public class ArrayMergeShould {
     @Test
     public void have_new_length() {
         //Given
-        ArrayMerge arrayMerge = new ArrayMerge();
+        ArrayMergeWithOneLoop arrayMerge = new ArrayMergeWithOneLoop();
         //When
         int firstArray[] = {1, 2, 5, 6, 3, 4};
         int secondArray[] = {6, 55, 22, 7, 22};
@@ -31,7 +30,7 @@ public class ArrayMergeShould {
     @Test
     public void maintain_elements_order() {
         //Given
-        ArrayMerge arrayMerge = new ArrayMerge();
+        ArrayMergeWithOneLoop arrayMerge = new ArrayMergeWithOneLoop();
         //When
         int firstArray[] = {1, 2, 5, 6, 3, 4};
         int secondArray[] = {6, 55, 22, 7, 22};
@@ -43,7 +42,7 @@ public class ArrayMergeShould {
     @Test
     public void merge_arrays_with_single_element() {
         //Given
-        ArrayMerge arrayMerge = new ArrayMerge();
+        ArrayMergeWithOneLoop arrayMerge = new ArrayMergeWithOneLoop();
         //When
         int firstArray[] = {6};
         int secondArray[] = {6};
@@ -57,7 +56,7 @@ public class ArrayMergeShould {
     @Test
     public void merge_arrays_with_first_array_empty() {
         //Given
-        ArrayMerge arrayMerge = new ArrayMerge();
+        ArrayMergeWithOneLoop arrayMerge = new ArrayMergeWithOneLoop();
         //When
         int firstArray[] = {};
         int secondArray[] = {6};
@@ -70,7 +69,7 @@ public class ArrayMergeShould {
     @Test
     public void merge_arrays_with_second_array_empty() {
         //Given
-        ArrayMerge arrayMerge = new ArrayMerge();
+        ArrayMergeWithOneLoop arrayMerge = new ArrayMergeWithOneLoop();
         //When
         int firstArray[] = {6};
         int secondArray[] = {};
@@ -83,7 +82,7 @@ public class ArrayMergeShould {
     @Test
     public void merge_empty() {
         //Given
-        ArrayMerge arrayMerge = new ArrayMerge();
+        ArrayMergeWithOneLoop arrayMerge = new ArrayMergeWithOneLoop();
         //When
         int firstArray[] = {};
         int secondArray[] = {};
@@ -96,7 +95,7 @@ public class ArrayMergeShould {
     @Test
     public void return_empty_array_on_null() {
         //Given
-        ArrayMerge arrayMerge = new ArrayMerge();
+        ArrayMergeWithOneLoop arrayMerge = new ArrayMergeWithOneLoop();
         //When
         int firstArray[] = null;
         int secondArray[] = null;

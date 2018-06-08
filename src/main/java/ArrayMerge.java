@@ -20,6 +20,7 @@ public class ArrayMerge {
             System.out.println("adding second array " + secondArray[i]);
             newLength++;
         }
+
         return mergedArray;
     }
 
